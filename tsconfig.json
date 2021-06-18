@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "noImplicitAny": false,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "target": "ES2018",
+      "outDir": "./dist",
+      "moduleResolution": "Node"
+    },
+    "include": ["./*.ts", "./routes/*.ts", "./Dao/*.ts"]
+}
