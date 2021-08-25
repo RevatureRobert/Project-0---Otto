@@ -5,9 +5,9 @@ import { IGame } from '../models/gameModel';
 config();
 
 AWS.config.update({
-    region: process.env.AWS_DEFAULT_REGION,
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+    region: process.env.region,
+    accessKeyId: process.env.accessKeyId,
+    secretAccessKey: process.env.secretAccessKey
 })
 
 const dynamoClient = new AWS.DynamoDB.DocumentClient();
